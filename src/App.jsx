@@ -27,6 +27,7 @@ export default function App() {
       path: "/",
       element: <Layout />,
       errorElement: <div>404 NOT FOUND</div>,
+
       children: [
         { index: true, element: <MainPage /> },
         {
