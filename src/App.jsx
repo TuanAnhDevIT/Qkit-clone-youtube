@@ -21,7 +21,7 @@ const Layout = () => {
 }
 
 export default function App() {
-
+  console.log("check", import.meta.env)
   const router = createBrowserRouter([
     {
       path: "/",
@@ -35,7 +35,7 @@ export default function App() {
         }
       ]
     }
-  ], { basename: "/Qkit-clone-youtube/" });
+  ], { basename: import.meta.env.BASE_URL });
 
   return (
     <>

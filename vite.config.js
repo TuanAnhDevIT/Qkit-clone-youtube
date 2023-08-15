@@ -6,7 +6,7 @@ dns.setDefaultResultOrder('verbatim')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "/Qkit-clone-youtube/",
+  base: process.env.BASE_URL,
   plugins: [react()],
   server: {
     port: 3000,
