@@ -5,12 +5,12 @@
   "type": "module",
   "homepage": "https://tuananhdevit.github.io/Qkit-clone-youtube",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
@@ -27,6 +27,6 @@
     "@types/react-dom": "18.0.11",
     "@vitejs/plugin-react-swc": "3.0.0",
     "gh-pages": "^6.0.0",
-    "vite": "4.2.0"
+    "vite": "^4.4.9"
   }
 }
