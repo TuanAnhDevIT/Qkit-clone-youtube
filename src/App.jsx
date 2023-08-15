@@ -35,7 +35,7 @@ export default function App() {
         }
       ]
     }
-  ]);
+  ], { basename: "/Qkit-clone-youtube/" });
 
   return (
     <>
